@@ -1,0 +1,33 @@
+QS PhoneInIpNum_11 { "*-11;*" }
+QS PhoneInIpNum_12 { "*-12;*" }
+QS PhoneInIpNum_13 { "*-13;*" }
+QS PhoneInIpNum_LessThan_11 { "*-0;*","*-1;*","*-2;*","*-3;*","*-4;*","*-5;*","*-6;*","*-7;*","*-8;*","*-9;*","*-10;*","*-11;*" }
+QS PwInSentNum_12 { "*+12@*" }
+QS PwInSentNum_LessThan_7 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*","*+7@*" }
+QS PwInSentNum_LessThan_9 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*","*+7@*","*+8@*","*+9@*" }
+QS PwInSentNum_LessThan_11 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*","*+7@*","*+8@*","*+9@*","*+10@*","*+11@*" }
+QS PpInSentNum_6 { "*+6/F:*" }
+QS PpInSentNum_LessThan_6 { "*+0/F:*","*+1/F:*","*+2/F:*","*+3/F:*","*+4/F:*","*+5/F:*","*+6/F:*" }
+QS PpInSentNum_LessThan_7 { "*+0/F:*","*+1/F:*","*+2/F:*","*+3/F:*","*+4/F:*","*+5/F:*","*+6/F:*","*+7/F:*" }
+QS IpInSentNum_1 { "*/G:1" }
+QS IpInSentNum_LessThan_2 { "*/G:0","*/G:1","*/G:2" }
+QS IpInSentNum_LessThan_6 { "*/G:0","*/G:1","*/G:2","*/G:3","*/G:4","*/G:5","*/G:6" }
+
+{*}[2]
+{
+   0 PwInSentNum_LessThan_9                             -2         -1    
+  -1 PhoneInIpNum_LessThan_11                           -5         -4    
+  -2 PpInSentNum_LessThan_6                             -6         -3    
+  -3 PwInSentNum_LessThan_11                            -8          "gv_mgc_1" 
+  -4 IpInSentNum_1                                     -12          "gv_mgc_2" 
+  -5 IpInSentNum_LessThan_2                             -9        -10    
+  -6 PpInSentNum_LessThan_7                             -7          "gv_mgc_3" 
+  -7 IpInSentNum_LessThan_6                              "gv_mgc_5"       "gv_mgc_4" 
+  -8 PpInSentNum_6                                     -13          "gv_mgc_6" 
+  -9 PwInSentNum_LessThan_7                              "gv_mgc_8"       "gv_mgc_7" 
+ -10 PhoneInIpNum_12                                   -11          "gv_mgc_9" 
+ -11 PhoneInIpNum_13                                    "gv_mgc_11"      "gv_mgc_10" 
+ -12 PhoneInIpNum_11                                    "gv_mgc_13"      "gv_mgc_12" 
+ -13 PwInSentNum_12                                     "gv_mgc_15"      "gv_mgc_14" 
+}
+

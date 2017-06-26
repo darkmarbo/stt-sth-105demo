@@ -1,0 +1,51 @@
+QS R-Central_Tongue { "*+d=*","*+t=*","*+n=*","*+l=*" }
+QS RR-beg_aa { "*=a@*","*=ai@*","*=an@*","*=ang@*","*=ao@*" }
+QS RR-beg_u { "*=u@*","*=ua@*","*=uan@*","*=uang@*","*=ui@*","*=un@*","*=uo@*" }
+QS RR-isnasbk { "*=ang@*","*=eng@*","*=iang@*","*=ing@*","*=iong@*","*=uang@*","*=ong@*" }
+QS RR-iao { "*=iao@*" }
+QS RR-uxe { "*=uxe@*" }
+QS RR-er { "*=er@*" }
+QS PhoneInIpNum_9 { "*-9;*" }
+QS PhoneInIpNum_10 { "*-10;*" }
+QS PhoneInIpNum_12 { "*-12;*" }
+QS PhoneInIpNum_13 { "*-13;*" }
+QS PhoneInIpNum_LessThan_12 { "*-0;*","*-1;*","*-2;*","*-3;*","*-4;*","*-5;*","*-6;*","*-7;*","*-8;*","*-9;*","*-10;*","*-11;*","*-12;*" }
+QS PwInSentNum_LessThan_6 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*" }
+QS PwInSentNum_LessThan_8 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*","*+7@*","*+8@*" }
+QS PwInSentNum_LessThan_10 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*","*+7@*","*+8@*","*+9@*","*+10@*" }
+QS PwInSentNum_LessThan_11 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*","*+7@*","*+8@*","*+9@*","*+10@*","*+11@*" }
+QS PwInSentNum_LessThan_12 { "*+0@*","*+1@*","*+2@*","*+3@*","*+4@*","*+5@*","*+6@*","*+7@*","*+8@*","*+9@*","*+10@*","*+11@*","*+12@*" }
+QS PpInSentNum_LessThan_6 { "*+0/F:*","*+1/F:*","*+2/F:*","*+3/F:*","*+4/F:*","*+5/F:*","*+6/F:*" }
+QS PpInSentNum_LessThan_8 { "*+0/F:*","*+1/F:*","*+2/F:*","*+3/F:*","*+4/F:*","*+5/F:*","*+6/F:*","*+7/F:*","*+8/F:*" }
+QS IpInSentNum_LessThan_2 { "*/G:0","*/G:1","*/G:2" }
+QS IpInSentNum_LessThan_3 { "*/G:0","*/G:1","*/G:2","*/G:3" }
+QS IpInSentNum_LessThan_4 { "*/G:0","*/G:1","*/G:2","*/G:3","*/G:4" }
+QS IpInSentNum_LessThan_6 { "*/G:0","*/G:1","*/G:2","*/G:3","*/G:4","*/G:5","*/G:6" }
+
+{*}[2]
+{
+   0 PwInSentNum_LessThan_6                             -2         -1    
+  -1 PhoneInIpNum_LessThan_12                          -18         -9    
+  -2 PhoneInIpNum_12                                    -3          "gv_lf0_1" 
+  -3 PwInSentNum_LessThan_10                            -4         -5    
+  -4 PpInSentNum_LessThan_6                             -7         -6    
+  -5 PwInSentNum_LessThan_8                            -10        -12    
+  -6 PwInSentNum_LessThan_11                             "gv_lf0_2"     -20    
+  -7 IpInSentNum_LessThan_6                            -11         -8    
+  -8 PpInSentNum_LessThan_8                              "gv_lf0_3"     -13    
+  -9 PhoneInIpNum_10                                   -22          "gv_lf0_4" 
+ -10 IpInSentNum_LessThan_4                              "gv_lf0_5"     -16    
+ -11 RR-iao                                              "gv_lf0_7"       "gv_lf0_6" 
+ -12 PhoneInIpNum_13                                   -15        -17    
+ -13 PwInSentNum_LessThan_12                           -21        -14    
+ -14 R-Central_Tongue                                    "gv_lf0_9"       "gv_lf0_8" 
+ -15 RR-beg_u                                           "gv_lf0_11"      "gv_lf0_10" 
+ -16 RR-uxe                                             "gv_lf0_13"      "gv_lf0_12" 
+ -17 RR-isnasbk                                         "gv_lf0_15"      "gv_lf0_14" 
+ -18 RR-beg_aa                                          "gv_lf0_16"     -19    
+ -19 IpInSentNum_LessThan_3                             "gv_lf0_18"      "gv_lf0_17" 
+ -20 RR-er                                              "gv_lf0_20"      "gv_lf0_19" 
+ -21 IpInSentNum_LessThan_2                             "gv_lf0_22"      "gv_lf0_21" 
+ -22 PhoneInIpNum_9                                     "gv_lf0_24"      "gv_lf0_23" 
+}
+
