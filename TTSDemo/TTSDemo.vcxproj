@@ -86,7 +86,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>D:\bdy\项目-源码\so_tts_adapt\g-tts_adap_105-dll\g-tts-adapt-demo\TTSDemo\includes\jieba\include;D:\bdy\项目-源码\so_tts_adapt\g-tts_adap_105-dll\g-tts-adapt-demo\TTSDemo\includes\jieba\deps;includes</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\bdy\项目-源码\TTS-Adapt\1g_tts_adapt\g_tts_adapt_demo\TTSDemo\includes\jieba\include;D:\bdy\项目-源码\TTS-Adapt\1g_tts_adapt\g_tts_adapt_demo\TTSDemo\includes\jieba\deps;includes</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
